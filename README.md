@@ -2,10 +2,13 @@
 
 Monolithic software is designed to be self-contained, it is like a big container, wherein all the software components of an app are assembled and tightly coupled, i.e., each component fully depends on each other.
 
-![alt text](<img src="images/../images/monolith-diagram.png">)
+<img width="750" alt="monolith-diagram" src="https://user-images.githubusercontent.com/69306840/184686567-99a3547f-dfeb-4410-94d4-a2904ccdc4fa.png">
 
-## create vagrantfile
-`# What is vagrant - its owned by Hashi-Corp
+
+### create vagrantfile
+
+```
+# What is vagrant - its owned by Hashi-Corp
 
 # Ruby
 
@@ -23,10 +26,12 @@ config.vm.synced_folder ".", "/home/vagrant/app"
 config.vm.provision "shell", path: "provision.sh"
 
 
-end`
+end
+```
 
-## create provision.sh
-`
+### create provision .sh
+
+```
 # update
 sudo apt-get update -y
 
@@ -48,16 +53,24 @@ cd app
 # Install pm2
 sudo apt-get install npm -y 
 npm install pm2 -g -y
-`
-- Then run the following commands 
-`vagrant destroy` 
-`vagrant up`
-`cd app` 
-`cd app` - ensure you are in the right folder
-`npm install`
-`npm start`
-- You should then see the following message 
+```
+
+
+Then run the following commands: 
+
+- `vagrant destroy` 
+- `vagrant up`
+- `cd app` 
+- `cd app` - ensure you are in the right folder
+- `npm install`
+- `npm start`
+
+You will then see the following message - 
 'Your app is ready and listening on port 3000'
+
+And the app shoud appear as follows in the browser
+
+<img width="190" alt="Screenshot 2022-08-15 at 18 41 13" src="https://user-images.githubusercontent.com/69306840/184687167-da2fbce0-9be9-4364-84f3-d95d60dab39b.png">
 
 
 
