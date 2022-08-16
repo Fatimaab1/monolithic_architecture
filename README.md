@@ -2,7 +2,9 @@
 
 Monolithic software is designed to be self-contained, it is like a big container, wherein all the software components of an app are assembled and tightly coupled, i.e., each component fully depends on each other.
 
-<img width="750" alt="monolith-diagram" src="https://user-images.githubusercontent.com/69306840/184686567-99a3547f-dfeb-4410-94d4-a2904ccdc4fa.png">
+<img width="720" alt="monolith-arch-diagram" src="https://user-images.githubusercontent.com/69306840/184834153-8c4ab583-a4d0-4095-b1ae-7ceb948258b1.png">
+
+
 
 
 ### create vagrantfile
